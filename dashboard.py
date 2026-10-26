@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-API_URL = "https://smart-siem-backend.onrender.com/api/v1/logs"
+API_URL = "https://smart-siem.onrender.com/api/v1/logs"
 
 st.title("🛡️ Smart-SIEM: Enterprise Threat & Noise Reduction Dashboard")
 st.markdown("Monitoring 1,000+ simulated cloud endpoints in real-time.")
@@ -18,7 +18,6 @@ st.markdown("Monitoring 1,000+ simulated cloud endpoints in real-time.")
 # Refresh button to fetch latest data
 if st.button("🔄 Refresh Logs Data", type="primary"):
     st.rerun()
-
 try:
     # Fetch data from FastAPI backend
     response = requests.get(API_URL)
