@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-API_URL = "http://127.0.0.1:8000/api/v1/logs"
+API_URL = "https://smart-siem-backend.onrender.com/api/v1/logs"
 
 st.title("🛡️ Smart-SIEM: Enterprise Threat & Noise Reduction Dashboard")
 st.markdown("Monitoring 1,000+ simulated cloud endpoints in real-time.")
